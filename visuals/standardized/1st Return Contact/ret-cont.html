@@ -48,8 +48,8 @@
     <svg width="1000" height="800"></svg>
     
     <script>
-        d3.json("../../../../data/json/ret_contact.json").then(function(returns_ucla) {
-            d3.json("../../../../data/json/ret_contact_dist.json").then(function(distribution) {
+        d3.json("../../../data/json/ret_contact.json").then(function(returns_ucla) {
+            d3.json("../../../data/json/ret_contact_dist.json").then(function(distribution) {
 
                 const svg = d3.select("svg");
                 const width = +svg.attr("width");
