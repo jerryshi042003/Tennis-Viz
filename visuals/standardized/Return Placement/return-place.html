@@ -45,7 +45,7 @@
     </style>
 </head>
 <body style="background-color: #86ac91;">
-    <svg width="1000" height="800"></svg>
+    <svg width="1000" height="800" viewBox="0 0 1000 800"></svg>
     
     <script>
         d3.json("../../../data/json/return_place.json").then(function(returns_ucla) {
@@ -366,7 +366,7 @@
                 svg.append("text")
                    .attr("class", "title")
                    .attr("x", width / 2)
-                   .attr("y", yScale(-180))
+                   .attr("y", height - 12)
                    .text(function() {
                         if (returns_ucla[0].sideFiltered) {
                             if (returns_ucla[0].fhBhFiltered) {
