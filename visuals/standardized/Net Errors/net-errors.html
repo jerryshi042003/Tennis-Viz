@@ -30,6 +30,14 @@
             font-family: 'DM Sans', sans-serif;
         }
 
+        @media (max-width: 1000px) {
+            svg {
+                width: 100%;
+                max-width: 600px;
+                height: auto;
+            }
+        }
+
         .title {
             font-size: 24px;
             font-weight: bold;
@@ -39,7 +47,7 @@
     </style>
 </head>
 <body>
-    <svg width="750" height="650"></svg>
+    <svg width="750" height="650" viewBox="0 0 750 650"></svg>
     
     <script>
         d3.json("../../../data/json/net_errors.json").then(function(net_errors) {
