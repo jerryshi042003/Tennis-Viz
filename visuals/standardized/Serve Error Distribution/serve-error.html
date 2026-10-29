@@ -62,8 +62,8 @@
     <svg width="925" height="800"></svg>
     
     <script>
-        d3.json("../../../../data/json/serve_error.json").then(function(serve_errors) {
-            d3.json("../../../../data/json/serve_error_dist.json").then(function(serve_errorDist) {
+        d3.json("../../../data/json/serve_error.json").then(function(serve_errors) {
+            d3.json("../../../data/json/serve_error_dist.json").then(function(serve_errorDist) {
 
                 const svg = d3.select("svg");
                 const width = +svg.attr("width");
